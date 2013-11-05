@@ -63,8 +63,12 @@ $height: $rem*5.7;
 
 @media screen and (min-width: $mobile) {
 	
-	.header-bar.open {
-		padding: 0;
+	.header-bar {
+		position: relative;
+		top: auto;
+		&.open {
+			padding: 0;
+		}
 	}
 	
 	.logo {

@@ -1,0 +1,12 @@
+.feature-section {
+	margin: 57px 0 0;
+}
+
+@media screen and (min-width: $mobile) {
+	.feature-section {
+		margin: 0;
+		background-image: url('/images/header-bg.jpg');
+		background-repeat: no-repeat;
+		background-position: center top;
+	}
+}
