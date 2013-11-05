@@ -2,9 +2,39 @@
 	margin: 57px 0 0;
 	padding: $unit*4 0;
 
+	color: $white;
+	text-align: center;
+
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
+
+
+	h2 {
+		margin: 0;
+		font-size: 2.25em;
+		font-weight: 300;
+	}
+
+	h3 {
+		margin: 0;
+		font-size: 1.31em;
+		font-weight: 600;
+	}
+
+}
+
+.feature-button-wrapper {
+	margin: $unit*3 0 0;
+	text-align: center;
+
+	&.read-more {
+		position: absolute;
+		bottom: $unit * 2;
+		left: 0;
+		right: 0;
+	}
 }
 
 @media screen and (min-width: $mobile) {
@@ -13,5 +43,26 @@
 		background-image: url('/images/header-bg.jpg');
 		background-repeat: no-repeat;
 		background-position: center top;
+
+		text-align: left;
+	}
+
+	.feature-text-wrapper {
+		position: relative;
+		top: 100px;
+	}
+
+	.feature-button-wrapper {
+		&.read-more {
+			position: static;
+		}
+	}
+
+
+	.phone-mockup-wrapper {
+		width: 320px;
+		height: 580px;
+		margin: 0 auto;
+		background: url('/images/landing-phone-graphic.png') no-repeat 0 0;
 	}
 }
