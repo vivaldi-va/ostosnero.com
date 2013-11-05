@@ -3,7 +3,10 @@ $height: $touchTarget;
 .btn {
 	height: $height;
 	min-width: $height;
-
+	line-height: $height;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
 
 
 	&.default {
@@ -13,9 +16,14 @@ $height: $touchTarget;
 		color: $white;
 		font-weight: 600;
 
-		-webkit-border-radius: 2px;
-		-moz-border-radius: 2px;
-		border-radius: 2px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+
 
 		&:hover,
 		&:focus {
@@ -31,22 +39,66 @@ $height: $touchTarget;
 	&.red {
 		@extend .default;
 		background-color: $red;
+
+		&:hover,
+		&:focus {
+			background-color: lighten($red, 10%);
+		}
+
+
+		&:active {
+			background-color: darken($red, 10%);
+		}
 	}
 
 	&.green {
 		@extend .default;
 		background-color: $green;
+
+		&:hover,
+		&:focus {
+			background-color: lighten($green, 10%);
+		}
+
+
+		&:active {
+			background-color: darken($green, 10%);
+		}
 	}
 
 	&.black {
 		@extend .default;
 		background-color: $black;
+
+		&:hover,
+		&:focus {
+			background-color: lighten($black, 10%);
+		}
+
+
+		&:active {
+			background-color: darken($black, 10%);
+		}
 	}
 
 	&.stroke-white {
 		@extend .default;
 		background: transparent;
 		border: 2px solid $white;
+
+		&:hover,
+		&:focus {
+			border:none;
+			background: $white;
+			color: $green;
+		}
+
+
+		&:active {
+			border:none;
+			background-color: $mutedGreen;
+			color: $green;
+		}
 	}
 
 
