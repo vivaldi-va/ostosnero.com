@@ -378,7 +378,15 @@ module.exports = function (grunt) {
                         'generated/*'
                     ]
                 }]
-            }
+            },
+			fontAwesome: {
+				files: [{
+					expand: true,
+					cwd: '<%= yeoman.app %>/bower_components/font-awesome/fonts',
+					src: '*',
+					dest: '<%= yeoman.dist %>/fonts'
+				}]
+			}
         },
         concurrent: {
             server: [
