@@ -50,7 +50,7 @@ module.exports = function (grunt) {
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
-            },
+            }
         },
         autoshot: {
             default_options: {
@@ -62,8 +62,8 @@ module.exports = function (grunt) {
                 // optional config, must set either remote or local
                 remote: 'http://localhost:<%= connect.options.port %>',
                 viewport: ['320x480','480x320','384x640','640x384','602x963','963x602','600x960','960x600','800x1280','1280x800','768x1024','1024x768']
-              },
-            },
+              }
+            }
           },
         
         responsive_images: {
@@ -71,7 +71,7 @@ module.exports = function (grunt) {
                 options: {
                     sizes: [
                         {
-                            width: 320,
+                            width: 320
                         },
                         {
                             width: 640
