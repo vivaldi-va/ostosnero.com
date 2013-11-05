@@ -9,6 +9,16 @@ body {
 	background: $offWhite;
 }
 
+
+.section-title {
+	margin: 0 0 3.2rem;
+	font-size: 1em;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
 .text {
 	&.sub {
 	   color: $muted;

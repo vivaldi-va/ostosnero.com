@@ -46,7 +46,7 @@
 		</div>
 	</div>
 </header>
-<section id="hero" class="full-width green feature-section">
+<section id="hero" class="full-width padded green feature-section">
 	<div class="wrapper">
 		<div class="row">
 			<div class="col-6">
@@ -66,11 +66,36 @@
 		</div>
 	</div>
 </section>
-<section id="quick-login" class="full-width off-green quick-login-form"></section>
-<section id="descriptions" class="descriptions-block">
-	<article class="description-item"></article>
-	<article class="description-item"></article>
-	<article class="description-item"></article>
+<section id="quick-login" class="full-width padded off-green quick-login-form">
+	<div class="wrapper">
+		<div class="row only-mobile">
+			<h2 class="section-title">Join now and start saving immidiately</h2>
+		</div>
+		<form action="" class="row form-horizontal">
+			<div class="col-3">
+				<input type="text" class="form-control" placeholder="full name">
+			</div>
+			<div class="col-3">
+				<input type="email" class="form-control" placeholder="email address">
+			</div>
+			<div class="col-3">
+				<input type="password" class="form-control" placeholder="password">
+			</div>
+			<div class="col-3">
+				<button type="submit" class="btn green form-control">Get started</button>
+			</div>
+		</form>
+
+	</div>
+
+
+</section>
+<section id="descriptions" class="full-width padded descriptions-block">
+	<div class="wrapper">
+		<article class="description-item"></article>
+		<article class="description-item"></article>
+		<article class="description-item"></article>
+	</div>
 </section>
 <section id="features" class="full-width black feature-block"></section>
 <section class="full-width off-green quick-join-rebuff"></section>
@@ -100,6 +125,7 @@
 
 <!-- build:js scripts/main.js -->
 <script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
 <script src="scripts/fastclick.js"></script>
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
