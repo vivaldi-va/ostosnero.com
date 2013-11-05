@@ -16,7 +16,8 @@
 }
 
 .wrapper {
-	width: 100%;
+	max-width: 1140px;
+
 	margin: 0 auto;
 	padding: 0 1em;
 
@@ -26,6 +27,11 @@
 }
 
 
+
+.only-mobile {
+	display: block;
+}
+
 .only-tablet {
 	display: none;
 }
@@ -33,8 +39,16 @@
 .only-desktop {
 	display: none;
 }
+body {
+	content: "mobile";
+}
 
-@media screen and (max-width: $mobile), screen and (max-height: $mobile) {
+
+
+@media screen and (min-width: $mobile) {
+	body {
+		content: "above mobile";
+	}
 	.only-mobile {
 		display: none;
 	}

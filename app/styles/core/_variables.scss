@@ -1,9 +1,11 @@
 $rem: 10px;
 $unit: $rem*1.6;
 
-$touchTarget: $rem*4.7;
+$touchTarget: $rem*3.6;
 
 // break points
 
-$mobile: 480px;
+$mobile: 768px;
+$tablet: 960px;
+$desktop: 1140px;
 //$tabletWidth:

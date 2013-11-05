@@ -6,7 +6,7 @@
 @import "./core/_colours";
 @import "./core/_typography";
 @import "./core/_variables";
-@import "./_assists";
+
 
 // atoms
 @import "./atoms/_button";
@@ -16,3 +16,6 @@
 // organisms
 
 @import "./organism/_header-bar";
+
+// helpers
+@import "./_assists";

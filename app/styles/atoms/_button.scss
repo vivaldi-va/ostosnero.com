@@ -1,24 +1,30 @@
 $height: $touchTarget;
 
 .btn {
+	display: inline-block;
 	height: $height;
 	min-width: $height;
+	padding: 0 1em;
+
+	border: none;
+
+	color: $white;
+	font-weight: 600;
 	line-height: $height;
 	text-align: center;
 	text-decoration: none;
+
 	cursor: pointer;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
 
 
 	&.default {
-		padding: 0 1em;
-		border: none;
-		background: $muted;
-		color: $white;
-		font-weight: 600;
 
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
+		background: $muted;
 
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
@@ -106,7 +112,6 @@ $height: $touchTarget;
 
 
 	&.no-style {
-		@extend .default;
 		background: transparent;
 		color: $black;
 
@@ -116,9 +121,14 @@ $height: $touchTarget;
 	}
 
 	&.block {
-		display: block;
 		width: 100%;
 	}
 
 
+}
+
+@media screen and (min-width: $mobile) {
+	.btn.block {
+		width: auto;
+	}
 }

@@ -1,84 +1,91 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-		<!-- build:css styles/main.css -->
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,400italic,600italic' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" type="text/css">
-        <link rel="stylesheet" href="styles/main.css">
-		<!-- endbuild -->
+	<!-- build:css styles/main.css -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,400italic,600italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- endbuild -->
 
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
-    </head>
-    <body>
+	<!-- build:js scripts/vendor/modernizr.js -->
+	<script src="bower_components/modernizr/modernizr.js"></script>
+	<!-- endbuild -->
+</head>
+<body>
 
-	<header id="top" class="full-width black header-bar">
-		<button class="btn no-style inverse only-mobile menu-dropdown-button"><i class="fa fa-bars"></i></button>
-		<div class="wrapper">
-			<div class="logo">
-				Ostosnero
-			</div>
-			<nav class="navigation"></nav>
-			<div class="user-actions">
-				<button class="btn red block">create an account</button>
-			</div>
+<header id="top" class="full-width black header-bar">
+	<button id="menu-dropdown-button" class="btn no-style inverse only-mobile menu-dropdown-button"><i class="fa fa-bars"></i></button>
+	<div class="wrapper">
+		<div class="logo">
+			Ostosnero
 		</div>
-	</header>
-	<section id="hero" class="full-width green feature-section">
+		<nav class="navigation"></nav>
+		<div class="user-actions">
+			<div class="login-button">
+				<span class="text sub">Have an account?</span>
+				<a class="btn no-style inverse block" href="#">Sign in</a>
+			</div>
+			<div class="sign-in-button">
+				<a href="#" class="btn red block">Create an account</a>
+			</div>
 
-	</section>
-	<section id="quick-login" class="full-width off-green quick-login-form"></section>
-	<section id="descriptions" class="descriptions-block">
-		<article class="description-item"></article>
-		<article class="description-item"></article>
-		<article class="description-item"></article>
-	</section>
-	<section id="features" class="full-width black feature-block"></section>
-	<section class="full-width off-green quick-join-rebuff"></section>
-	<section id="testimonials" class="testimonial-block"></section>
-	<footer id="footer" class="full-width green footer-block"></footer>
+		</div>
+	</div>
+</header>
+<section id="hero" class="full-width green feature-section">
+
+</section>
+<section id="quick-login" class="full-width off-green quick-login-form"></section>
+<section id="descriptions" class="descriptions-block">
+	<article class="description-item"></article>
+	<article class="description-item"></article>
+	<article class="description-item"></article>
+</section>
+<section id="features" class="full-width black feature-block"></section>
+<section class="full-width off-green quick-join-rebuff"></section>
+<section id="testimonials" class="testimonial-block"></section>
+<footer id="footer" class="full-width green footer-block"></footer>
 
 
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+	your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+	improve your experience.</p>
+<![endif]-->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+	var _gaq = [
+		['_setAccount', 'UA-XXXXX-X'],
+		['_trackPageview']
+	];
+	(function (d, t)
+	{
+		var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+		g.src = '//www.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g, s)
+	}(document, 'script'));
+</script>
 
-        <!-- build:js scripts/main.js -->
-        <script src="bower_components/jquery/jquery.js"></script>
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+<!-- build:js scripts/main.js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="scripts/fastclick.js"></script>
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
 
-        <!-- build:js(.tmp) scripts/coffee.js -->
-        <script src="scripts/hello.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js scripts/async-local-storage.js -->
-        <script src="scripts/async.localStorage.js"></script>
-        <script src="scripts/async.localStorage.examples.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js scripts/fastclick.js -->
-        <script src="scripts/fastclick.js"></script>
-        <script src="scripts/fastclick.example.js"></script>
-        <!-- endbuild -->
 </body>
 </html>

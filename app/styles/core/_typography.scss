@@ -9,3 +9,9 @@ body {
 	background: $offWhite;
 }
 
+.text {
+	&.sub {
+	   color: $muted;
+	}
+}
+

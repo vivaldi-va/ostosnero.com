@@ -1,42 +1,89 @@
 $height: $rem*5.7;
 
+
+
+
+
 .header-bar {
-	position: relative;
+	position: absolute;
+	top: 0;
 	height: $height;
 
-	//overflow: hidden;
+	overflow: hidden;
 
 	color: $white;
+	text-align: center;
 
-
-
-	.logo {
-
-		float: left;
-		width: 100%;
-
-
-		font-size: 1.31em;
-		font-weight: 600;
-		line-height: $height;
-		text-align: center;
+	&.open {
+		height: auto;
+		padding: 0 0 1em;
 	}
 
-	.navigation {
-		display: none;
+}
+.logo {
+
+	float: left;
+	width: 100%;
+
+
+	font-size: 1.31em;
+	font-weight: 600;
+	line-height: $height;
+	text-align: center;
+}
+
+.navigation {
+	display: none;
+	float: left;
+	width: 100%;
+}
+
+.user-actions {
+	float: left;
+	width: 100%;
+	padding: $unit*2 0 0;
+
+	.login-button,
+	.sign-in-button {
 		float: left;
 		width: 100%;
 	}
 
-	.user-actions {
-		float: left;
-		width: 100%;
+	.sign-in-button {
+		margin: 0.5em 0 0;
 	}
 }
 
 .menu-dropdown-button {
 	position: absolute;
-	top: ($height - $touchTarget)/2;
+	top: ($height - $touchTarget) / 2;
 	right: 0;
 
+}
+
+@media screen and (min-width: $mobile) {
+	
+	.header-bar.open {
+		padding: 0;
+	}
+	
+	.logo {
+		width: auto;
+	}
+
+	.user-actions {
+		float: right;
+		width: auto;
+		margin: ($height - $touchTarget) / 2;
+		padding: 0;
+
+		.login-button,
+		.sign-in-button {
+			width: auto;
+		}
+
+		.sign-in-button {
+			margin: 0;
+		}
+	}
 }
