@@ -1,0 +1,42 @@
+$height: $rem*5.7;
+
+.header-bar {
+	position: relative;
+	height: $height;
+
+	//overflow: hidden;
+
+	color: $white;
+
+
+
+	.logo {
+
+		float: left;
+		width: 100%;
+
+
+		font-size: 1.31em;
+		font-weight: 600;
+		line-height: $height;
+		text-align: center;
+	}
+
+	.navigation {
+		display: none;
+		float: left;
+		width: 100%;
+	}
+
+	.user-actions {
+		float: left;
+		width: 100%;
+	}
+}
+
+.menu-dropdown-button {
+	position: absolute;
+	top: ($height - $touchTarget)/2;
+	right: 0;
+
+}

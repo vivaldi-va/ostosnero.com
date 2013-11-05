@@ -1,0 +1,72 @@
+$height: $touchTarget;
+
+.btn {
+	height: $height;
+	min-width: $height;
+
+
+
+	&.default {
+		padding: 0 1em;
+		border: none;
+		background: $muted;
+		color: $white;
+		font-weight: 600;
+
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+
+		&:hover,
+		&:focus {
+			background-color: lighten($muted, 10%);
+		}
+
+
+		&:active {
+			background-color: darken($muted, 10%);
+		}
+	}
+
+	&.red {
+		@extend .default;
+		background-color: $red;
+	}
+
+	&.green {
+		@extend .default;
+		background-color: $green;
+	}
+
+	&.black {
+		@extend .default;
+		background-color: $black;
+	}
+
+	&.stroke-white {
+		@extend .default;
+		background: transparent;
+		border: 2px solid $white;
+	}
+
+
+
+
+
+	&.no-style {
+		@extend .default;
+		background: transparent;
+		color: $black;
+
+		&.inverse {
+			color: $white;
+		}
+	}
+
+	&.block {
+		display: block;
+		width: 100%;
+	}
+
+
+}

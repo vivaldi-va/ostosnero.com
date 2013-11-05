@@ -1,0 +1,47 @@
+
+
+.full-width {
+	float: left;
+	width: 100%;
+
+	&.black {
+		background-color: $black;
+	}
+	&.green {
+		background-color: $green;
+	}
+	&.off-green {
+		background-color: $mutedGreen;
+	}
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1em;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.only-tablet {
+	display: none;
+}
+
+.only-desktop {
+	display: none;
+}
+
+@media screen and (max-width: $mobile), screen and (max-height: $mobile) {
+	.only-mobile {
+		display: none;
+	}
+	
+	.only-tablet {
+		display: block;
+	}
+
+}
+

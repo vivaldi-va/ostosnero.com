@@ -10,8 +10,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+		<!-- build:css styles/main.css -->
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,400italic,600italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" type="text/css">
         <link rel="stylesheet" href="styles/main.css">
+		<!-- endbuild -->
+
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
@@ -19,9 +24,16 @@
     <body>
 
 	<header id="top" class="full-width black header-bar">
-		<div class="logo"></div>
-		<nav class="navigation"></nav>
-		<div class="user-actions"></div>
+		<button class="btn no-style inverse only-mobile menu-dropdown-button"><i class="fa fa-bars"></i></button>
+		<div class="wrapper">
+			<div class="logo">
+				Ostosnero
+			</div>
+			<nav class="navigation"></nav>
+			<div class="user-actions">
+				<button class="btn red block">create an account</button>
+			</div>
+		</div>
 	</header>
 	<section id="hero" class="full-width green feature-section">
 
