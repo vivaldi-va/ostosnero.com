@@ -92,11 +92,14 @@ $height: $touchTarget;
 		background: transparent;
 		border: 2px solid $white;
 
+		line-height: $height - 4;
+
 		&:hover,
 		&:focus {
 			border:none;
 			background: $white;
 			color: $green;
+			line-height: $height;
 		}
 
 
@@ -104,6 +107,7 @@ $height: $touchTarget;
 			border:none;
 			background-color: $mutedGreen;
 			color: $green;
+			line-height: $height;
 		}
 	}
 
