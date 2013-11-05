@@ -1,22 +1,7 @@
+html {
+  font-size: 10px; }
+
 body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
-}
-
-.hero-unit {
-    margin: 0 auto;
-    max-width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
-}
-
-.hero-unit h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-}
+  font: 400 1.6em/1.5 'Source Sans Pro', 'Helvetic Neue', helvetica, arial, sans-serif;
+  color: #2f323a;
+  background: #f7f7f7; }
