@@ -13,6 +13,11 @@ p {
 	max-width: 33em;
 }
 
+strong {
+	font-weight: 700;
+	color: $green;
+}
+
 
 .section-title {
 	margin: 0 0 3.2rem;
@@ -37,8 +42,10 @@ p {
 	html {font-size: $rem;}
 }
 
-@media screen and (min-width: $tablet) {
+/*
+@media screen and (min-width: $desktop) {
 	html {font-size: $rem*1.2;}
 }
 
 
+*/

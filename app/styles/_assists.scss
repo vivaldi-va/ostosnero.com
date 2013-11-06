@@ -14,16 +14,13 @@
 .only-desktop {
 	display: none;
 }
-body {
-	content: "mobile";
+
+.pull-right {
+	float: right;
 }
 
 
-
 @media screen and (min-width: $mobile) {
-	body {
-		content: "above mobile";
-	}
 	.only-mobile {
 		display: none;
 	}

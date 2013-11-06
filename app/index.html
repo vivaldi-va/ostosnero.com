@@ -16,10 +16,10 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 	<!-- build:css styles/main.css -->
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,400italic,600italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="styles/main.css">
 	<!-- endbuild -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,400italic,600italic' rel='stylesheet' type='text/css'>
 
 	<!-- build:js scripts/vendor/modernizr.js -->
 	<script src="bower_components/modernizr/modernizr.js"></script>
@@ -90,11 +90,11 @@
 
 
 </section>
-<section id="descriptions" class="full-width padded descriptions-block">
+<section id="descriptions" class="full-width padded-fat descriptions-block">
 	<div class="wrapper">
 		<article class="row description-item">
 			<aside class="col-6">
-				<img class="description-item-image not-mobile" src="./images/circle-graphic-01.jpg" alt=""/>
+				<img class="description-item-image" src="./images/circle-graphic-01.jpg" alt=""/>
 			</aside>
 			<div class="col-6">
 				<div class="description-item-content">
@@ -106,7 +106,7 @@
 		</article>
 		<article class="row reverse description-item">
 			<aside class="col-6">
-				<img class="description-item-image not-mobile" src="./images/circle-graphic-02.png" alt=""/>
+				<img class="description-item-image" src="./images/circle-graphic-02.png" alt=""/>
 			</aside>
 			<div class="col-6">
 				<div class="description-item-content">
@@ -118,7 +118,7 @@
 		</article>
 		<article class="row description-item">
 			<aside class="col-6">
-				<img class="description-item-image not-mobile" src="./images/circle-graphic-03.png" alt=""/>
+				<img class="description-item-image" src="./images/circle-graphic-03.png" alt=""/>
 			</aside>
 			<div class="col-6">
 				<div class="description-item-content">
@@ -131,7 +131,7 @@
 	</div>
 </section>
 
-<section id="features" class="full-width padded black feature-block">
+<section id="features" class="full-width padded-fat green feature-block">
 	<div class="wrapper">
 		<div class="row">
 			<div class="col-4 feature-item">
@@ -161,9 +161,31 @@
 		</div>
 	</div>
 </section>
-<section class="full-width padded off-green quick-join-rebuff"></section>
-<section id="testimonials" class="full-width padded testimonial-block"></section>
-<footer id="footer" class="full-width padded green footer-block"></footer>
+<section class="full-width padded off-green quick-join-rebuff">
+	<div class="wrapper">
+		<div class="col-6 pull-right">
+			<span class="quick-join-rebuff-tagline">Interested? Ostosnero is <strong>free</strong> to use.</span>
+			<a class="btn green" href="#quick-login">Get started</a>
+		</div>
+	</div>
+</section>
+<section id="featured" class="full-width padded-fat featured-in-block">
+	<h2 class="section-title">Featured on</h2>
+
+	<div class="row">
+		<div class="col-4">
+			<img class="featured-in-image" src="./images/arctic-startup-logo.png" alt="arctic startup logo"/>
+		</div>
+		<div class="col-4">
+			<img class="featured-in-image" src="./images/tnw-logo.png" alt="the next web logo">
+		</div>
+		<div class="col-4">
+			<img class="featured-in-image" src="./images/irish-times-logo.png" alt="the irish times logo"/>
+		</div>
+	</div>
+
+</section>
+<footer id="footer" class="full-width padded black footer-block"></footer>
 
 
 <!--[if lt IE 7]>
@@ -175,7 +197,7 @@
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script async>
 	var _gaq = [
-		['_setAccount', 'UA-XXXXX-X'],
+		['_setAccount', 'UA-39066312-1'],
 		['_trackPageview']
 	];
 	(function (d, t)

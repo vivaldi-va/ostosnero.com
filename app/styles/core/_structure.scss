@@ -17,6 +17,11 @@
 	&.padded {
 		padding: $unit*4 0;
 	}
+
+	&.padded-fat {
+		padding: $unit*8 0;
+	}
+
 }
 
 .wrapper {

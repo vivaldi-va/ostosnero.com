@@ -1,0 +1,22 @@
+.featured-in-block {
+	text-align: center;
+}
+
+.featured-in-image {
+	max-width: 70%;
+	height: auto;
+}
+
+@media screen and (min-width: $mobile) {
+	.featured-in-image {
+		max-width: 80%;
+	}
+}
+
+
+@media screen and (min-width: $tablet) {
+	.featured-in-image {
+		max-width: 60%;
+	}
+}
+
