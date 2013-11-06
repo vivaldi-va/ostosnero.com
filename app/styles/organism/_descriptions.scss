@@ -1,0 +1,58 @@
+
+
+.description-item {
+	text-align: center;
+
+	
+	& + .description-item {
+		margin: $unit*2 0 0;
+	}
+}
+
+.description-item-content {
+	margin: 0;
+
+	p {
+		display: inline-block;
+		margin: 0;
+	}
+}
+
+
+
+.description-title {
+	margin: 0 0 0.5em;
+	font-size: 1.5em;
+	font-weight: 400;
+	line-height: 1.15;
+}
+
+.description-item-image {
+	display: none;
+}
+
+
+@media screen and (min-width: $mobile) {
+
+	.description-item {
+		text-align: left;
+	}
+
+
+	.description-item-content {
+		margin: 25% 0 0;
+	}
+
+	.description-item-image {
+		float: left;
+		display: block;
+		width: 75%;
+		height: auto;
+		margin: 0 12.5% 0;
+
+		&.one {
+			background: url('../images/circle-graphic-01.png') no-repeat center top;
+		}
+	}
+
+}

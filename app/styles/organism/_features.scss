@@ -1,0 +1,49 @@
+.feature-block {
+	color: $white;
+
+
+}
+
+.feature-item {
+	position: relative;
+
+	& + .feature-item {
+		margin: $unit*2 0 0;
+	}
+}
+
+.feature-icon {
+	width: 100%;
+	text-align: center;
+	font-size: $unit*2;
+
+}
+
+.feature-content {
+	margin: $unit 0 0;
+	text-align: center;
+
+	h3 {
+		margin: 0;
+		font-size: 1em;
+		line-height: 1.15;
+		text-transform: uppercase;
+	}
+
+	p {
+		display: inline-block;
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: $mobile) {
+	.feature-item  + .feature-item {
+			margin: 0;
+	}
+
+	.feature-icon {
+		font-size: $unit*4;
+	}
+
+}
+

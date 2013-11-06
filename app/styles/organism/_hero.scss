@@ -15,6 +15,7 @@
 		margin: 0;
 		font-size: 2.25em;
 		font-weight: 300;
+		line-height: 1.15;
 	}
 
 	h3 {
@@ -40,7 +41,7 @@
 @media screen and (min-width: $mobile) {
 	.feature-section {
 		margin: 0;
-		background-image: url('/images/header-bg.jpg');
+		background-image: url('../images/header-bg.jpg');
 		background-repeat: no-repeat;
 		background-position: center top;
 
@@ -63,6 +64,6 @@
 		width: 320px;
 		height: 580px;
 		margin: 0 auto;
-		background: url('/images/landing-phone-graphic.png') no-repeat 0 0;
+		background: url('../images/landing-phone-graphic.png') no-repeat 0 0;
 	}
 }

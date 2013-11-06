@@ -60,7 +60,7 @@
 				<div class="feature-button-wrapper">
 					<a class="btn stroke-white" href="#">Start saving for free</a>
 				</div><div class="feature-button-wrapper read-more">
-					<a class="btn no-style inverse feature-read-more" href="#">Read more</a>
+					<a class="btn no-style inverse feature-read-more" href="#quick-login">Read more</a>
 				</div>
 			</section>
 		</div>
@@ -92,15 +92,78 @@
 </section>
 <section id="descriptions" class="full-width padded descriptions-block">
 	<div class="wrapper">
-		<article class="description-item"></article>
-		<article class="description-item"></article>
-		<article class="description-item"></article>
+		<article class="row description-item">
+			<aside class="col-6">
+				<img class="description-item-image not-mobile" src="./images/circle-graphic-01.jpg" alt=""/>
+			</aside>
+			<div class="col-6">
+				<div class="description-item-content">
+					<h3 class="description-title">Säästä rahaa</h3>
+
+					<p>Ruokaostoksilla käydessäsi, voit säästää rahaa yksinkertaisesti avaamalla ostoslistasi ja me teemme älykkään optimoinnin puolestasi.</p>
+				</div>
+			</div>
+		</article>
+		<article class="row reverse description-item">
+			<aside class="col-6">
+				<img class="description-item-image not-mobile" src="./images/circle-graphic-02.png" alt=""/>
+			</aside>
+			<div class="col-6">
+				<div class="description-item-content">
+					<h3 class="description-title">Ostoshistoria</h3>
+
+					<p>Katso mitä olet ostanut oman ostohistoriasi kautta, kuinka paljon olet kuluttanut ja ennenkaikkea paljonko olet säästänyt.</p>
+				</div>
+			</div>
+		</article>
+		<article class="row description-item">
+			<aside class="col-6">
+				<img class="description-item-image not-mobile" src="./images/circle-graphic-03.png" alt=""/>
+			</aside>
+			<div class="col-6">
+				<div class="description-item-content">
+					<h3 class="description-title">Ostoskäyttäytyminen</h3>
+
+					<p>Suunnittele ja optimoi ostoskäyttäytymistäsi hintojen ja kalorien perusteella tai täydennä ostoslistasi automaattisesti reseptien avulla.</p>
+				</div>
+			</div>
+		</article>
 	</div>
 </section>
-<section id="features" class="full-width black feature-block"></section>
-<section class="full-width off-green quick-join-rebuff"></section>
-<section id="testimonials" class="testimonial-block"></section>
-<footer id="footer" class="full-width green footer-block"></footer>
+
+<section id="features" class="full-width padded black feature-block">
+	<div class="wrapper">
+		<div class="row">
+			<div class="col-4 feature-item">
+				<div class="feature-icon"><i class="fa fa-magic"></i></div>
+				<article class="feature-content">
+					<h3>Yhteisö</h3>
+
+					<p>Kommentoi, jaa reseptejä ja ideoitasi. Päivitä hintatietoja ja paikallisia tarjouksia auttaaksesi muita jotka haluavat säästää ruokaostoksissaan.</p>
+				</article>
+			</div>
+			<div class="col-4 feature-item">
+				<div class="feature-icon"><i class="fa fa-shopping-cart"></i></div>
+				<article class="feature-content">
+					<h3>Helppoa</h3>
+
+					<p>Ostoslistan tekeminen ja hallinta on helppoa. Löydä automaattisesti halvimmat paikalliset hinnat ostoskorillesi.</p>
+				</article>
+			</div>
+			<div class="col-4 feature-item">
+				<div class="feature-icon"><i class="fa fa-clock-o"></i></div>
+				<article class="feature-content">
+					<h3>Paikallinen ja laaja</h3>
+
+					<p>Kaikki ruokakaupat ympäri Suomen. Kaikki päivittäistavarat.</p>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="full-width padded off-green quick-join-rebuff"></section>
+<section id="testimonials" class="full-width padded testimonial-block"></section>
+<footer id="footer" class="full-width padded green footer-block"></footer>
 
 
 <!--[if lt IE 7]>
@@ -110,7 +173,7 @@
 <![endif]-->
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
+<script async>
 	var _gaq = [
 		['_setAccount', 'UA-XXXXX-X'],
 		['_trackPageview']

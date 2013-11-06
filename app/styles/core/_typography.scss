@@ -1,12 +1,16 @@
 
 html {
-	font-size: 10px;
+	font-size: $rem*0.8;
 }
 
 body {
 	font: 400 1.6em/1.5 'source sans pro', 'Helvetic Neue', helvetica, arial, sans-serif;
 	color: $black;
 	background: $offWhite;
+}
+
+p {
+	max-width: 33em;
 }
 
 
@@ -19,9 +23,22 @@ body {
 }
 
 
+
+
+
+
 .text {
 	&.sub {
 	   color: $muted;
 	}
 }
+
+@media screen and (min-width: $mobile) {
+	html {font-size: $rem;}
+}
+
+@media screen and (min-width: $tablet) {
+	html {font-size: $rem*1.2;}
+}
+
 

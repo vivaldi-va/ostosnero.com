@@ -3,6 +3,10 @@
 	display: block;
 }
 
+.not-mobile {
+	display: none;
+}
+
 .only-tablet {
 	display: none;
 }
@@ -22,6 +26,10 @@ body {
 	}
 	.only-mobile {
 		display: none;
+	}
+
+	.not-mobile {
+		display: block;
 	}
 	
 	.only-tablet {
