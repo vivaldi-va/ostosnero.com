@@ -61,7 +61,7 @@ module.exports = function (grunt) {
                 type: 'PNG',
                 // optional config, must set either remote or local
                 remote: 'http://localhost:<%= connect.options.port %>',
-                viewport: ['320x480','480x320','384x640','640x384','602x963','963x602','600x960','960x600','800x1280','1280x800','768x1024','1024x768']
+                viewport: ['320x480','480x320','384x640','640x384','602x963','963x602','600x960','960x600','800x1280','1280x800','768x1024','1024x768', '1280x960', '1400x600', '1920x1080']
               }
             }
           },
@@ -83,9 +83,9 @@ module.exports = function (grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: '<%= yeoman.app %>/images',
+                    cwd: '<%= yeoman.dist %>',
                     src: '{,*/}*.{png,jpg,jpeg}',
-                    dest: '<%= yeoman.dist %>/images'
+                    dest: '<%= yeoman.dist %>'
                 }]
             }
         },
@@ -367,7 +367,7 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,png,txt}',
                         '.htaccess',
-                        'images/{,*/}*.{webp,gif}',
+                        'images/{,*/}*.{jpg,png}',
                         'styles/fonts/*'
                     ]
                 }, {
@@ -433,10 +433,10 @@ module.exports = function (grunt) {
         'useminPrepare',
         'concurrent:dist',
         'cssmin',
-        'responsive_images:dev',
         'concat',
         'uglify',
         'copy',
+        //'responsive_images:dev',
         'rev',
         'usemin'
     ]);
