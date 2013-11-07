@@ -19,6 +19,8 @@
 	float: right;
 }
 
+.domain:before {content:"@";}
+
 
 @media screen and (min-width: $mobile) {
 	.only-mobile {

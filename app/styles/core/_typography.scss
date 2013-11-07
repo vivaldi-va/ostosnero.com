@@ -9,8 +9,31 @@ body {
 	background: $offWhite;
 }
 
-p {
+
+
+a {
+	color: inherit;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $green;
+	}
+
+	&.no-style {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+
+
+p{
 	max-width: 33em;
+}
+
+li {
+	@extend p;
 }
 
 strong {

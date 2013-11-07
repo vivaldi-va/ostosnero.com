@@ -5,23 +5,32 @@
 
 	&.black {
 		background-color: $black;
+		color: $white;
 	}
 	&.green {
 		background-color: $green;
+		color: $white;
 	}
 	&.off-green {
 		background-color: $mutedGreen;
 		border-bottom: 1px solid rgba($green, 0.25);
 	}
 
-	&.padded {
-		padding: $unit*4 0;
+
+
+
+}
+
+.padded {
+	padding: $unit*4 0;
+
+	&.thin {
+		padding: $unit 0;
 	}
 
-	&.padded-fat {
+	&.fat {
 		padding: $unit*8 0;
 	}
-
 }
 
 .wrapper {

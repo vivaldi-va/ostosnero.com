@@ -1,0 +1,54 @@
+.footer-block {
+	text-align: center;
+
+}
+
+.legal {
+	width: 100%;
+	float: left;
+	margin: 0 0 $unit*2;
+}
+.footer-nav {
+	width: 100%;
+	float: left;
+
+	a {
+		display: block;
+		float: left;
+		width: 100%;
+		height: $touchTarget;
+		text-transform: capitalize;
+
+		& + a {
+			margin: 1em 0 0;
+		}
+	}
+}
+
+@media screen and (min-width: $mobile) {
+	.legal {
+		width: auto;
+		float: left;
+		margin: 0 $unit*2 0 0;
+	}
+
+	.footer-nav {
+		width: auto;
+	}
+
+	.footer-nav {
+		width: auto;
+
+		a {
+			display: inline;
+			width: auto;
+			height: auto;
+			line-height: normal;
+
+			& + a {
+				margin: 0 0 0 1em;
+			}
+		}
+	}
+
+}

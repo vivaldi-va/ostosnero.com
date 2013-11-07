@@ -33,6 +33,7 @@ $height: $touchTarget;
 
 		&:hover,
 		&:focus {
+			color: inherit;
 			background-color: lighten($muted, 10%);
 		}
 
@@ -45,10 +46,13 @@ $height: $touchTarget;
 	&.red {
 		@extend .default;
 		background-color: $red;
+		color: $white;
 
 		&:hover,
 		&:focus {
+
 			background-color: lighten($red, 10%);
+			color: $white;
 		}
 
 
@@ -60,10 +64,11 @@ $height: $touchTarget;
 	&.green {
 		@extend .default;
 		background-color: $green;
-
+		color: $white;
 		&:hover,
 		&:focus {
 			background-color: lighten($green, 10%);
+			color: $white;
 		}
 
 
@@ -75,10 +80,11 @@ $height: $touchTarget;
 	&.black {
 		@extend .default;
 		background-color: $black;
-
+		color: $white;
 		&:hover,
 		&:focus {
 			background-color: lighten($black, 10%);
+			color: $white;
 		}
 
 
@@ -117,11 +123,16 @@ $height: $touchTarget;
 
 	&.no-style {
 		background: transparent;
-		color: $black;
+		color: inherit;
 
-		&.inverse {
-			color: $white;
+		&:hover {
+			color: $green;
 		}
+
+		&.no-hover:hover {
+			color: inherit;
+		}
+
 	}
 
 	&.block {
