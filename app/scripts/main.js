@@ -44,12 +44,6 @@ $('#menu-dropdown-button').click(function(e) {
 	$('#top').toggleClass('open');
 });
 
-/*
-$('.nav-link').click(function(e) {
-	e.preventDefault();
-	var target = $(this).attr('href');
-	console.log(target);
-});*/
 
 $(function() {
 	$('a[href*=#]:not([href=#])').click(function() {
@@ -59,7 +53,7 @@ $(function() {
 			if (target.length) {
 				$('html,body').animate({
 					scrollTop: target.offset().top
-				}, 1000);
+				}, 500);
 				return false;
 			}
 		}
