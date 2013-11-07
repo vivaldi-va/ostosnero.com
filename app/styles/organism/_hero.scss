@@ -50,6 +50,9 @@
 
 			width: $unit;
 			height: $unit;
+
+			margin: 0 0 0 ($unit*-0.5);
+
 			line-height: $unit;
 
 
@@ -86,6 +89,10 @@
 	.feature-button-wrapper {
 		&.read-more {
 			position: static;
+
+			&:after {
+				margin: 0;
+			}
 		}
 	}
 
