@@ -39,7 +39,33 @@
 		bottom: $unit * 2;
 		left: 0;
 		right: 0;
+
+
+		&:after {
+			font-family: 'FontAwesome';
+			content: "\f107";
+			position: absolute;
+			bottom: $unit*-0.5;
+			left: 50%;
+
+			width: $unit;
+			height: $unit;
+			line-height: $unit;
+
+
+			-webkit-transition: all 0.2s ease-in;
+			-moz-transition: all 0.2s ease-in;
+			-ms-transition: all 0.2s ease-in;
+			-o-transition: all 0.2s ease-in;
+			transition: all 0.2s ease-in;
+			//margin: 0 0 0 ($unit / 2);
+		}
+
+		&:hover:after {
+			bottom: $unit*-1;
+		}
 	}
+
 }
 
 @media screen and (min-width: $mobile) {

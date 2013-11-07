@@ -7,6 +7,9 @@ body {
 	font: 400 1.6em/1.5 'source sans pro', 'Helvetic Neue', helvetica, arial, sans-serif;
 	color: $black;
 	background: $offWhite;
+
+
+
 }
 
 
@@ -24,6 +27,12 @@ a {
 		text-decoration: none;
 		color: inherit;
 	}
+
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
 }
 
 
