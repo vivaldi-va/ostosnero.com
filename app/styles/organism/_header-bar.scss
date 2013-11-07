@@ -33,9 +33,26 @@ $height: $rem*5.7;
 }
 
 .navigation {
-	display: none;
 	float: left;
 	width: 100%;
+
+	a {
+		display: block;
+		float: left;
+		width: 100%;
+		height: $touchTarget;
+		line-height: $touchTarget;
+		text-transform: capitalize;
+		text-decoration: none;
+
+		& + a {
+			margin: 1em 0 0;
+		}
+
+		&:hover {
+			background: rgba($white, 0.1);
+		}
+	}
 }
 
 .user-actions {
@@ -87,7 +104,30 @@ $height: $rem*5.7;
 		}
 
 		.sign-in-button {
-			margin: 0;
+			margin: 0 0 0 $unit;
+		}
+	}
+
+	.navigation {
+
+		float: left;
+		width: auto;
+		height: 100%;
+		margin: 0 0 0 $unit*4;
+
+		a {
+			display: inline;
+			width: auto;
+			height: auto;
+			line-height: $height;
+
+			& + a {
+				margin: 0 0 0 1em;
+			}
+
+			&:hover {
+				background-color: transparent;
+			}
 		}
 	}
 }
