@@ -1,0 +1,136 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<!-- build:css styles/main.css -->
+	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- endbuild -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,400italic,600italic' rel='stylesheet' type='text/css'>
+
+	<!-- build:js scripts/vendor/modernizr.js -->
+	<script src="bower_components/modernizr/modernizr.js"></script>
+	<!-- endbuild -->
+</head>
+<body>
+
+<header id="top" class="full-width black header-bar">
+	<button id="menu-dropdown-button" class="btn no-style inverse only-mobile menu-dropdown-button"><i class="fa fa-bars"></i></button>
+	<div class="wrapper">
+		<h1 class="logo">
+			<a href="/" class="no-style">Ostosnero</a>
+		</h1>
+		<nav class="navigation">
+			<a href="./#descriptions" class="nav-link">about</a>
+			<a href="./#features" class="nav-link">features</a>
+		</nav>
+		<div class="user-actions">
+			<div class="login-button">
+				<span class="text sub">Joko sinulla on tili?</span>
+				<a class="btn no-style inverse block" href="#">Kirjaudu sisään</a>
+				<span class="text sub">tai</span>
+			</div>
+			<div class="sign-in-button">
+				<a href="#" class="btn red block">Luo uusi tili</a>
+			</div>
+
+		</div>
+	</div>
+</header>
+
+<section class="full-width green padded fat">
+	<div class="wrapper feature-header">
+		<h2>One step registration</h2>
+		<h3>You&lsquo;ll be saving in moments</h3>
+	</div>
+</section>
+
+
+<section class="full-width padded fat doc-block">
+	<div class="wrapper">
+		<form action="" class="form-vertical">
+			<div class="row form-group">
+				<label for="reg-name" class="col-2">Name</label>
+				<input id="reg-name" class="col-10" name="name" type="text" required>
+			</div>
+			<div class="row form-group">
+				<label for="reg-email" class="col-2">Email</label>
+				<input id="reg-email" class="col-10" name="email" type="email" required>
+			</div>
+			<div class="row form-group">
+				<label for="reg-pass" class="col-2">Password</label>
+				<input id="reg-pass" class="col-10" name="pass" type="password" required>
+			</div>
+			<div class="row form-group">
+				<label class="pull-right checkbox">Do you agree to our <a href="terms.html">terms and conditions</a>?
+					<input name="terms" type="checkbox">
+				</label>
+			</div>
+			<div class="row form-group">
+				<button class="btn green block col-6 pull-right" type="submit">Complete registration</button>
+			</div>
+		</form>
+
+
+
+	</div>
+</section>
+
+
+
+<footer id="footer" class="full-width padded thin black footer-block">
+	<div class="wrapper">
+		<span class="text sub legal">Copyright<sup><small>&copy;</small></sup> <a href="http://avansera.com" target="_BLANK">Avansera Oy</a></span>
+		<nav class="footer-nav">
+			<a href="#top">top</a>
+			<a href="./#descriptions">about</a>
+			<a href="./#features">features</a>
+			<a href="terms.html">Palvelun käyttöehdot</a>
+			<a href="privacy.html">Tietosuojakäytäntö</a>
+		</nav>
+	</div>
+</footer>
+
+
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+	your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+	improve your experience.</p>
+<![endif]-->
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script async>
+	var _gaq = [
+		['_setAccount', 'UA-39066312-1'],
+		['_trackPageview']
+	];
+	(function (d, t)
+	{
+		var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+		g.src = '//www.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g, s)
+	}(document, 'script'));
+</script>
+
+<!-- build:js scripts/main.js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+<script src="scripts/fastclick.js"></script>
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>
