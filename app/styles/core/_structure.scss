@@ -44,6 +44,8 @@
 	box-sizing: border-box;
 }
 
+$column: 8.3333%;
+
 .row {
 	float: left;
 	width: 100%;
@@ -73,16 +75,44 @@
 		}
 	}
 
+	.col-1 {
+		width: $column;
+	}
+
+	.col-2 {
+		width: $column*2;
+	}
 	.col-3 {
-		width: 25%;
+		width: $column*3;
 	}
 
 	.col-4 {
-		width: 33.33%;
+		width: $column*4;
 	}
 
+	.col-5 {
+		width: $column*5;
+	}
 	.col-6 {
-		width: 50%;
+		width: $column*6;
+	}
+	.col-7 {
+		width: $column*7;
+	}
+	.col-8 {
+		width: $column*8;
+	}
+	.col-9 {
+		width: $column*9;
+	}
+	.col-10 {
+		width: $column*10;
+	}
+	.col-11 {
+		width: $column*11;
+	}
+	.col-12 {
+		width: $column*12;
 	}
 
 
