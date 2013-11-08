@@ -41,7 +41,7 @@ p{
 	max-width: 33em;
 }
 
-li {
+li, h2, h3 {
 	@extend p;
 }
 
@@ -74,10 +74,10 @@ strong {
 	html {font-size: $rem;}
 }
 
-/*
+
 @media screen and (min-width: $desktop) {
 	html {font-size: $rem*1.2;}
 }
 
 
-*/
+
