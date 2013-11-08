@@ -37,22 +37,18 @@ a {
 
 
 
-p{
-	max-width: 33em;
-}
 
-li, h2, h3 {
-	@extend p;
+p, li, h2, h3 {
+	max-width: 33em;
 }
 
 strong {
 	font-weight: 700;
-	color: $green;
 }
 
 
 .section-title {
-	margin: 0 0 3.2rem;
+	margin: 0 auto 3.2rem;
 	font-size: 1em;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -67,6 +63,14 @@ strong {
 .text {
 	&.sub {
 	   color: $muted;
+	}
+
+	&.red {
+		color: $red;
+	}
+
+	&.green {
+		color: $green;
 	}
 }
 
