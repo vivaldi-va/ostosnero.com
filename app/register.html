@@ -61,23 +61,26 @@
 
 <section class="full-width padded fat doc-block">
 	<div class="wrapper">
-		<form action="" class="form-vertical">
+		<form action="" id="reg-form" class="form-vertical">
 			<div class="row form-group">
 				<label for="reg-name" class="col-2">Name</label>
-				<input id="reg-name" class="col-10" name="name" type="text" required>
+				<input id="reg-name" class="col-10" name="name" type="text">
 			</div>
 			<div class="row form-group">
 				<label for="reg-email" class="col-2">Email</label>
-				<input id="reg-email" class="col-10" name="email" type="email" required>
+				<input id="reg-email" class="col-10" name="email" type="email">
 			</div>
 			<div class="row form-group">
 				<label for="reg-pass" class="col-2">Password</label>
-				<input id="reg-pass" class="col-10" name="pass" type="password" required>
+				<input id="reg-pass" class="col-10" name="pass" type="password">
 			</div>
 			<div class="row form-group">
 				<label class="pull-right checkbox">Do you agree to our <a href="terms.html">terms and conditions</a>?
-					<input name="terms" type="checkbox">
+					<input id="reg-terms" name="terms" type="checkbox">
 				</label>
+			</div>
+			<div class="row padded thin">
+				<strong id="reg-error-message" class="text red pull-right"></strong>
 			</div>
 			<div class="row form-group">
 				<button class="btn green block col-6 pull-right" type="submit">Complete registration</button>

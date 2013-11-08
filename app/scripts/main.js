@@ -60,3 +60,62 @@ $(function() {
 	});
 });
 
+$('#reg-form').submit(function(e) {
+	e.preventDefault();
+
+	var terms = $('#reg-terms:checked').length ? true : false,
+		data = {
+			name: $('#reg-name').val(),
+			email: $('#reg-email').val(),
+			pass: $('#reg-pass').val(),
+			terms: terms
+		},
+		button = $('#reg-form').find('[type="submit"]'),
+		buttonText = button.html();
+
+	function setButtonText(text) {
+		button.html(text);
+	}
+
+	function setErrorText(text) {
+		var errorElem = $('#reg-error-message');
+		errorElem.html(text);
+	}
+
+	function addSpinner() {
+		console.log(button);
+		console.log(buttonText);
+		button.html('<i class="fa fa-refresh fa-spin"></i>')
+	}
+
+
+
+
+	addSpinner();
+
+
+	//console.log(data.params());
+
+	$.ajax({
+		url: 'http://localhost/avansera/api/register/',
+		method: 'GET',
+		dataType: 'jsonp',
+		data: data
+	})
+		.done(function(status) {
+
+			console.log(status);
+			//var status = JSON.parse(status);
+			if(!!status.success) {
+				setButtonText("registration successful" + " " + '<i class="fa fa-check"></i>');
+				button.attr('disabled', true);
+			} else {
+				setButtonText(buttonText);
+				setErrorText(status.error);
+			}
+		})
+		.fail(function(reason) {
+			setButtonText(buttonText);
+			console.log(reason);
+		});
+});
