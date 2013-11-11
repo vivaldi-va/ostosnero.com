@@ -51,7 +51,7 @@ $column: 8.3333%;
 	width: 100%;
 }
 
-[class^='col-'] {
+[class*='col-'] {
 	float: left;
 	width: 100%;
 	-webkit-box-sizing: border-box;
@@ -61,7 +61,7 @@ $column: 8.3333%;
 
 @media screen and (min-width: $mobile) {
 
-	[class^='col-'] + [class^='col-'] {
+	[class*='col-'] + [class*='col-'] {
 		padding: 0 0 0 $unit;
 	}
 
@@ -114,6 +114,56 @@ $column: 8.3333%;
 	.col-12 {
 		width: $column*12;
 	}
+
+	.offset-1 {
+		margin-left: $column;
+	}
+
+	.offset-2 {
+		margin-left: $column*2;
+	}
+
+	.offset-3 {
+		margin-left: $column*3;
+	}
+
+	.offset-4 {
+		margin-left: $column*4;
+	}
+
+	.offset-5 {
+		margin-left: $column*5;
+	}
+
+	.offset-6 {
+		margin-left: $column*6;
+	}
+
+	.offset-7 {
+		margin-left: $column*7;
+	}
+
+	.offset-8 {
+		margin-left: $column*8;
+	}
+
+	.offset-9 {
+		margin-left: $column*9;
+	}
+
+	.offset-10 {
+		margin-left: $column*10;
+	}
+
+	.offset-11 {
+		margin-left: $column*11;
+	}
+
+	.offset-12 {
+		margin-left: $column*12;
+	}
+
+
 
 
 
