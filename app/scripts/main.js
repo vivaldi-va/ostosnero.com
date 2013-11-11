@@ -60,15 +60,25 @@ $(function() {
 	});
 });
 
+$('#quick-register-form').submit(function(e) {
+	e.preventDefault();
+	var email = $('#quick-register-form-email').val();
+
+	location.replace('register.html' + '?email=' + email);
+
+});
+
+if(window.location.pathname === '/register.html') {
+
+}
+
 $('#reg-form').submit(function(e) {
 	e.preventDefault();
 
-	var terms = $('#reg-terms:checked').length ? true : false,
-		data = {
+	var data = {
 			name: $('#reg-name').val(),
 			email: $('#reg-email').val(),
-			pass: $('#reg-pass').val(),
-			terms: terms
+			pass: $('#reg-pass').val()
 		},
 		button = $('#reg-form').find('[type="submit"]'),
 		buttonText = button.html();

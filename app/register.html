@@ -24,6 +24,8 @@
 	<!-- build:js scripts/vendor/modernizr.js -->
 	<script src="bower_components/modernizr/modernizr.js"></script>
 	<!-- endbuild -->
+
+
 </head>
 <body>
 
@@ -53,8 +55,8 @@
 
 <section class="full-width green padded fat">
 	<div class="wrapper feature-header">
-		<h2>One step registration</h2>
-		<h3>You&lsquo;ll be saving in moments</h3>
+		<h2>Rekisteröidy alla olevalla lomakkeella</h2>
+		<h3>Olet mukana säästämässä ruokakuluissa</h3>
 	</div>
 </section>
 
@@ -63,27 +65,26 @@
 	<div class="wrapper">
 		<form action="" id="reg-form" class="form-vertical">
 			<div class="row form-group">
-				<label for="reg-name" class="col-2">Name</label>
-				<input id="reg-name" class="col-10" name="name" type="text">
+				<label for="reg-name" class="col-4">Nimi tai nimimerkki</label>
+				<input id="reg-name" class="col-8" name="name" type="text" autofocus="true" autocomplete="false" tabindex="1">
 			</div>
 			<div class="row form-group">
-				<label for="reg-email" class="col-2">Email</label>
-				<input id="reg-email" class="col-10" name="email" type="email">
+				<label for="reg-email" class="col-4">Sähköpostiosoite</label>
+				<input id="reg-email" class="col-8" name="email" type="email" autocomplete="false" tabindex="2">
 			</div>
 			<div class="row form-group">
-				<label for="reg-pass" class="col-2">Password</label>
-				<input id="reg-pass" class="col-10" name="pass" type="password">
+				<label for="reg-pass" class="col-4">Salasana</label>
+				<input id="reg-pass" class="col-8" name="pass" type="password" autocomplete="false" tabindex="3">
 			</div>
 			<div class="row form-group">
-				<label class="pull-right checkbox">Do you agree to our <a href="terms.html">terms and conditions</a>?
-					<input id="reg-terms" name="terms" type="checkbox">
+				<label class="pull-right checkbox">By registering, you agree to our <a href="terms.html">terms and conditions</a>
 				</label>
 			</div>
 			<div class="row padded thin">
 				<strong id="reg-error-message" class="text red pull-right"></strong>
 			</div>
 			<div class="row form-group">
-				<button class="btn green block col-6 pull-right" type="submit">Complete registration</button>
+				<button class="btn green block col-6 pull-right" type="submit" tabindex="4">Palvelun käyttöehdot</button>
 			</div>
 		</form>
 
@@ -128,12 +129,22 @@
 	}(document, 'script'));
 </script>
 
+
+
 <!-- build:js scripts/main.js -->
 <script src="bower_components/jquery/jquery.js"></script>
 <script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
 <script src="scripts/fastclick.js"></script>
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
+
+<script type="text/javascript">
+	function getURLParameter(name) {
+		return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+	}
+
+	$('#reg-email').val(getURLParameter('email'));
+</script>
 
 </body>
 </html>
