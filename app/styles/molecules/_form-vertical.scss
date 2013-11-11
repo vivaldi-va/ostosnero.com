@@ -29,7 +29,7 @@
 
 @media screen and (min-width: $mobile) {
 	.form-vertical {
-		width: 60%;
+		width: 80%;
 		.form-group {
 			margin: 0 0 1em;
 
@@ -49,5 +49,11 @@
 				}
 			}
 		}
+	}
+}
+
+@media screen and (min-width: $desktop) {
+	.form-vertical {
+		width: 60%;
 	}
 }
