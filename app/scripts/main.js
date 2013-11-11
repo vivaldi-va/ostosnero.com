@@ -117,7 +117,7 @@ $('#reg-form').submit(function(e) {
 			console.log(status);
 			//var status = JSON.parse(status);
 			if(!!status.success) {
-				setButtonText("registration successful" + " " + '<i class="fa fa-check"></i>');
+				setButtonText("Rekisteröinti onnistui" + " " + '<i class="fa fa-check"></i>');
 				button.attr('disabled', true);
 			} else {
 				setButtonText(buttonText);
@@ -128,4 +128,9 @@ $('#reg-form').submit(function(e) {
 			setButtonText(buttonText);
 			console.log(reason);
 		});
+});
+
+
+$('[href*="quick-login"]').click(function(e) {
+	$('#quick-register-form-email').focus();
 });
