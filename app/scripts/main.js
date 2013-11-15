@@ -107,7 +107,7 @@ $('#reg-form').submit(function(e) {
 	//console.log(data.params());
 
 	$.ajax({
-		url: 'http://localhost/avansera/api/register/',
+		url: 'http://ostosnero.fi/api/register/',
 		method: 'GET',
 		dataType: 'jsonp',
 		data: data
@@ -119,6 +119,11 @@ $('#reg-form').submit(function(e) {
 			if(!!status.success) {
 				setButtonText("Rekisteröinti onnistui" + " " + '<i class="fa fa-check"></i>');
 				button.attr('disabled', true);
+
+
+				setTimeout(function() {
+					location.replace('http://ostosnero.fi/mobile');
+				}, 1000);
 			} else {
 				setButtonText(buttonText);
 				setErrorText(status.error);
