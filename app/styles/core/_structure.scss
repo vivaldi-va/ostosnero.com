@@ -28,9 +28,6 @@
 		padding: $unit 0;
 	}
 
-	&.fat {
-		padding: $unit*8 0;
-	}
 }
 
 .wrapper {
@@ -60,6 +57,9 @@ $column: 8.3333%;
 }
 
 @media screen and (min-width: $mobile) {
+
+
+
 
 	[class*='col-'] + [class*='col-'] {
 		padding: 0 0 0 $unit;
@@ -167,4 +167,14 @@ $column: 8.3333%;
 
 
 
+}
+
+@media screen and (min-width: $tablet) {
+
+	.padded {
+
+		&.fat {
+			padding: $unit*8 0;
+		}
+	}
 }

@@ -136,6 +136,3 @@ $('#reg-form').submit(function(e) {
 });
 
 
-$('[href*="quick-login"]').click(function(e) {
-	$('#quick-register-form-email').focus();
-});
