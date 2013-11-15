@@ -37,3 +37,7 @@
 
 }
 
+@media screen and (min-width: $tablet) {
+	.only-desktop {
+		display: inline-block;}
+}
