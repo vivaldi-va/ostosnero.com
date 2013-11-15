@@ -20,16 +20,34 @@ $height: $rem*5.7;
 	}
 
 }
+
+.logo-wrapper {
+	width: 10em;
+	margin: 0 auto;
+}
+
+.logo-image-wrapper {
+	float: left;
+	width: 3em;
+	height: 3em;
+	margin: 0.75em 0.5em 0 0;
+}
+
+
+.logo-image {
+	max-width: 100%;
+}
+
 .logo {
 
 	float: left;
-	width: 100%;
+	//width: 100%;
 	margin: 0;
 
 	font-size: 1.31em;
 	font-weight: 600;
 	line-height: $height;
-	text-align: center;
+	text-align: left;
 }
 
 .navigation {
@@ -87,7 +105,17 @@ $height: $rem*5.7;
 			padding: 0;
 		}
 	}
-	
+
+
+	.logo-wrapper {
+		float: left;
+		width: 10em;
+		margin: 0;
+	}
+	 .logo-image-wrapper {
+		 margin: 0.45em 0.5em 0 0;
+	 }
+
 	.logo {
 		width: auto;
 	}
@@ -113,7 +141,7 @@ $height: $rem*5.7;
 		float: left;
 		width: auto;
 		height: 100%;
-		margin: 0 0 0 $unit*4;
+		margin: 0 0 0 $unit*2;
 
 		a {
 			display: inline;
@@ -129,5 +157,12 @@ $height: $rem*5.7;
 				background-color: transparent;
 			}
 		}
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.logo-image-wrapper {
+		width: 2.5em;
+		height: 2.5em;
 	}
 }
