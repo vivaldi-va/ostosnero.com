@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	font: 400 1.6em/1.5 'source sans pro', 'Helvetic Neue', helvetica, arial, sans-serif;
+	font: 400 1.6em/1.5 sans-serif;
 	color: $black;
 	background: $offWhite;
 
@@ -76,6 +76,7 @@ strong {
 
 @media screen and (min-width: $mobile) {
 	html {font-size: $rem;}
+	body {font-family: 'source sans pro', sans-serif;}
 }
 
 
